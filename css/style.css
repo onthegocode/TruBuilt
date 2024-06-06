@@ -224,7 +224,7 @@ section {
 .headContainer {
 	font-family: var(--ff-title);
 	color: var(--clr-accent);
-	max-width: 95rem;
+	max-width: 65rem;
 	display: flex;
 	align-items: start;
 	justify-content: start;
@@ -242,6 +242,7 @@ section {
 	color: var(--clr-accent);
 	text-decoration: none;
 	display: inline;
+	font-family: var(--ff-title);
 	font-size: 1.6rem;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -305,7 +306,6 @@ section {
 	width: 20rem;
 	height: 20rem;
 	text-align: center;
-	cursor: pointer;
 	transition: var(--hover-transition);
 }
 
@@ -313,20 +313,24 @@ section {
 	transition: var(--hover-transition);
 }
 
-.card:hover {
+/* .card:hover {
 	background-color: var(--clr-primary);
 	color: var(--clr-accent);
-}
+} */
 
-.card:hover svg path {
+/* .card:hover svg path {
 	fill: var(--clr-accent);
-}
+} */
 
 .card p {
 	font-weight: bold;
 }
 
 /* Cards End */
+
+.productBtnContainer {
+	margin-top: 1rem;
+}
 
 /*#endregion Products */
 
@@ -388,6 +392,17 @@ section {
 	width: 66rem;
 }
 
+.AboutUsContent a:link,
+.AboutUsContent a:visited {
+	color: var(--clr-secondary);
+	transition: var(--hover-transition);
+}
+
+.AboutUsContent a:hover,
+.AboutUsContent a:active {
+	color: var(--clr-primary);
+}
+
 .AboutUsContent p {
 	color: var(--clr-secondary);
 }
@@ -445,6 +460,10 @@ section {
 	align-items: center;
 	gap: 4rem;
 	margin-bottom: 4rem;
+}
+
+.getInTouchContent-1 {
+	flex-direction: column;
 }
 
 .getInTouchSocial {
@@ -691,6 +710,7 @@ section {
 		align-items: center;
 		justify-content: center;
 		text-align: center;
+		margin: 0 auto;
 	}
 
 	.navBarContainer ul {
