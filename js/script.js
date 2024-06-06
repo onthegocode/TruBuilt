@@ -42,13 +42,7 @@ window.addEventListener("load", () => {
 		}
 
 		window.addEventListener("resize", () => {
-			resized = window.innerWidth;
-			height = window.innerHeight;
-			headerImgSize = Math.ceil(height - headerHeight);
-			document.documentElement.style.setProperty(
-				"--header-imageSize",
-				headerImgSize + "px"
-			);
+			
 			if (resized <= 660) {
 				burgerMenu.addEventListener("click", () => {
 					burgerLinks.classList.add("navPlaced");
