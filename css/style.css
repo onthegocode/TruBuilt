@@ -218,7 +218,7 @@ section {
 /*#region Heading */
 .head {
 	height: var(--header-imageSize);
-	background: url("/media/header.webp") center / cover;
+	background: url("https://onthegocode.github.io/TruBuilt/media/header.webp") center / cover;
 }
 
 .headContainer {
@@ -682,7 +682,7 @@ section {
 
 @media only screen and (max-width: 980px) {
 	.head {
-		background: url("/media/header.jpg") center / cover,
+		background: url("https://onthegocode.github.io/TruBuilt/media/header.jpg") center / cover,
 			linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 		background-blend-mode: overlay;
 	}
