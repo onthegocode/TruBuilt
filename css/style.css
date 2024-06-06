@@ -57,10 +57,12 @@ h1 {
 	font-size: 6.4rem;
 	line-height: 120%;
 	text-shadow: var(--text-shadow);
+	text-transform: uppercase;
 }
 
 h2 {
 	font-size: 4rem;
+	text-transform: uppercase;
 }
 
 h3 {
