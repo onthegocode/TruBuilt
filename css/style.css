@@ -362,8 +362,10 @@ section {
 }
 
 .servicesContent .card {
-	width: 18rem;
-	height: 18rem;
+	width: max-content;
+	height: 16rem;
+	padding: 0 1.6rem;
+	justify-content: end;
 }
 
 /*#endregion Services */
@@ -644,6 +646,31 @@ section {
 
 /*#region Media Queries */
 
+/*#region Icons */
+.jobSiteIcon {
+	width: 70px;
+}
+.TechnicalSupportIcon {
+	width: 70px;
+	height: 70px;
+}
+.subAssistIcon {
+	width: 70px;
+}
+/*#endregion Icons */
+
+@media only screen and (max-width: 1200px) {
+	.servicesContainer {
+		align-items: center;
+	}
+	.servicesContent {
+		flex-wrap: wrap;
+	}
+	.servicesContent .card {
+		padding: 0 1rem;
+	}
+}
+
 @media only screen and (max-width: 1180px) {
 	.aboutUsContainer img {
 		width: 48rem;
@@ -750,6 +777,9 @@ section {
 		display: flex;
 		width: 60rem;
 		height: 40rem;
+	}
+	.servicesContent {
+		justify-content: center;
 	}
 }
 
